@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Uebung18 {
 
     public static void main(String[] args) throws FileNotFoundException {
+
         File f = new File("test.txt");
 
         Scanner s = new Scanner(f);
@@ -14,10 +15,10 @@ public class Uebung18 {
             a.add(s.nextLine());
         }
 
-        a.forEach( (str) -> System.out.println(str));
+        //a.forEach((str) -> System.out.println(str));
 
-        /*for (String str : a) {
+        for (String str : a) {
             System.out.println(str);
-        }*/
+        }
     }
 }
